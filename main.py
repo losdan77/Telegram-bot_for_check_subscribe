@@ -17,7 +17,7 @@ async def start(mes):
 
 @dp.message_handler()
 async def check_subscribe(mes):
-    chat_id = '-1001572324800'
+    chat_id = '-11111111111111'
     user_channel_status = await bot.get_chat_member(chat_id=chat_id,
                                                     user_id=mes.from_user.id)
 
@@ -28,7 +28,7 @@ async def check_subscribe(mes):
     else:
         markup = types.InlineKeyboardMarkup()
         markup.add(types.InlineKeyboardButton('Подписаться',
-                                              url='https://t.me/fdfgfdgdf'))
+                                              url='https://t.me/your_channel'))
 
         await mes.answer('Для получения контента необходимо подписаться на канал!',
                          reply_markup=markup)
